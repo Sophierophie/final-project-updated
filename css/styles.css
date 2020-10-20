@@ -1,0 +1,756 @@
+body {
+    background-image: url("../Img/Dark\ Brick\ Wall.jpg");
+    background-size: cover;
+    background-position: cover;
+    margin: 0px;
+    overflow-x: hidden;
+    
+}
+
+
+.menu-control {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    
+  }
+
+
+  .controls {
+      display:flex;
+      background-color: white;
+      height: 20px;
+      padding: 20px;
+  }
+
+  .controls a {
+    display: none;
+}
+
+.controls p {
+    display: inline-block;
+    margin: auto;
+    font-family: 'Nixie One', cursive;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+  .menu {
+    background: linear-gradient(to right, #000000, #333333, #FF66CC);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    overflow-y: scroll;
+    padding: 15px 30px;
+    position: fixed;
+    transition: all 0.35s ease-in-out;
+    transform: translateX(100%);
+    z-index: 100;
+
+  }
+
+  .menu-open {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  .menu a, .menu a:focus, .menu a:visited {
+    color: white;
+    display: block;
+    font-size: 30px;
+    margin: 25px auto;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .menu-close {
+    background-color: white;
+    color: darkred;
+  }
+
+.menu-desktop {
+    position: absolute;
+    overflow: hidden;
+}
+
+.menu-item-list li {
+    display: none;
+}
+
+
+.header-container {
+    height: 600px;
+}
+
+.header-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+
+}
+
+.glow {
+    color: white;
+    text-align: center;
+    font-family: 'Nixie One', cursive;
+    font-size: 25px;
+    animation: glow 1s ease-in-out infinite alternate;
+    position: relative;
+    top: 250px;
+    bottom: 50px;
+    z-index: 1;
+
+}
+
+@keyframes glow {
+    from {
+    text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0    40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+    text-shadow:  0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+    }
+
+.header-button {
+    padding: 10px;
+    position: absolute;
+    top: 450px;
+    z-index: 2;
+    left: 190px;
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out; 
+    }
+
+.header-button:hover {
+    color: black;
+    box-shadow: 0 5px 15px  #fa4349;
+    cursor: pointer;
+    }
+
+.overlay {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+    opacity: 0.6;
+    
+}
+
+@media (min-width: 768px) {
+    .header-image {
+        height: 550px;
+        width: 550px;
+        border-radius: 400px;
+        position: absolute;
+        right: 120px;
+        top: 50px;
+        margin-top: 35px;
+    }
+    .glow {
+        font-size: 25px;
+        color: white;
+        text-align: left;
+        font-family: 'Nixie One', cursive;
+        animation: glow 1s ease-in-out infinite alternate;
+        position: relative;
+        bottom: -200px;
+        top: 190px;
+        margin-left: 30px;
+        text-align: center;
+     }
+
+     .header-button {
+        padding: 15px;
+        position: relative;
+        top: 220px;
+        left: 320px;
+        text-decoration: none;
+        color: black;
+        background: white;
+        padding: 15px 40px;
+        border-radius: 10px;
+        transition: all 0.2s ease-in-out;
+          }
+
+
+
+
+}
+
+@media (min-width: 1024px) {
+
+
+.menu-control {
+    display: none;
+}
+
+.controls {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.controls a {
+    display: inline;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Nixie One', cursive;
+    color: black;
+
+}
+
+.controls p {
+    display: none;
+}
+
+
+.menu-desktop {
+    position: absolute;
+    display: none;
+    z-index: 200;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 20px, 10px;
+    width: 200px;
+    top: 60px;
+    left: 200px;
+    background-color: white;
+    height: 170px;
+    font-family: 'Nixie One', cursive;
+    font-weight: bold;
+    background: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+
+.menu-desktop#dropdown-menu-2 {
+    left: 500px;
+    min-width: 200px; 
+    height: 210px;
+    background: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+ 
+
+
+
+
+.menu-item-list li  {
+    color: #454545;
+    display: block;
+    padding: 10px; 
+    text-decoration: underline;
+    
+  
+}
+
+
+
+.show {
+    display: block;
+}
+
+
+
+
+.header-container {
+   height: 650px;
+}
+
+
+
+
+.glow {
+   font-size: 40px;
+   color: white;
+   text-align: left;
+   font-family: 'Nixie One', cursive;
+   animation: glow 1s ease-in-out infinite alternate;
+   position: relative;
+   bottom: -200px;
+   top: 200px;
+   margin-left: 30px;
+}
+
+@keyframes glow {
+    from {
+    text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0    40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+    text-shadow:  0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+    }
+
+.header-image {
+    height: 550px;
+    width: 550px;
+    border-radius: 400px;
+    position: absolute;
+    right: 70px;
+    top: 70px;
+    margin-top: 35px;
+}
+
+.header-button {
+    padding: 15px;
+    position: relative;
+    top: 220px;
+    left: 30px;
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 15px 40px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+      }
+      
+    .header-button:hover {
+    color: black;
+    box-shadow: 0 5px 15px  #fa4349;
+      }
+    }
+
+
+.main-events-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.selling-fast-events {
+    flex-direction: column;
+    color: white;
+    font-family: 'Nixie One', cursive;
+
+}
+
+.selling-fast-events h3 {
+    position: relative;
+    top: -180px;
+    left: 200px;
+    font-size: 22px;
+    
+
+}
+
+.selling-fast-events p {
+    margin-left: 15px;
+    width: 90%;
+  
+}
+
+.selling-fast-events h4 {
+    margin-left: 15px;
+}
+
+.selling-fast-image {
+    display: block;
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    opacity: 0.7; 
+    border-top: 10px #FF66CC solid;
+
+}
+
+@media (min-width: 768px) {
+    .selling-fast-events p {
+        width: 700px;
+        margin-left: 30px;
+
+    }
+
+    .main-events-container {
+        flex-direction: column;
+           
+    }
+
+    .selling-fast-image {
+        display: block;
+        width: 750px;
+        height: 350px;
+        margin-left: 30px;
+        background-color: black;
+        opacity: 0.7; 
+        border-top: 10px #FF66CC solid;
+    }
+
+    .selling-fast-events h3 {
+        position: relative;
+        top: -200px;
+        left: 340px;
+        font-size: 22px;
+
+    }
+
+    .selling-fast-events h4 {
+        margin-left: 30px;
+
+    }
+
+
+
+
+
+}
+
+@media (min-width: 1024px) {
+
+    .main-events-container {
+        flex-direction: row;
+        
+    }
+
+    .selling-fast-image {
+        display: block;
+        width: 420px;
+        height: 350px;
+        margin-right: 40px;
+        background-color: black;
+        opacity: 0.7; 
+        border-top: 10px #FF66CC solid;
+    }
+
+    .selling-fast-events h3 {
+        position: relative;
+        top: -200px;
+        left: 180px;
+        font-size: 22px;
+
+    }
+
+    .selling-fast-events p {
+        width: 400px;
+
+    }
+
+
+
+div:first-child {
+    margin-left:20px;
+
+
+}
+}
+
+
+.button-container {
+    height: 400px;
+
+}
+
+.categories-header {
+    text-align: center;
+    font-family: 'Nixie One', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+.button-controls {
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ margin-left: 20px;
+}
+
+.category-btn {
+    background-color: #FF33FF;
+    color: white;
+    font-family: 'Nixie One', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.category-btn:hover {
+    background-color:#ffe6e6;
+    color: black;
+    font-family: 'Nixie One', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+
+    .category-btn {
+        background-color: #FF33FF;
+        color: white;
+        font-family: 'Nixie One', cursive;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 10px;
+        margin-right: 17px;
+        
+    }
+    
+    .category-btn:hover {
+        background-color:#ffe6e6;
+        color: black;
+        font-family: 'Nixie One', cursive;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 10px;
+
+    }
+
+
+
+
+}
+
+@media (min-width: 1024px) {
+
+
+    .button-container {
+        height: 200px;
+    
+    }
+
+    .categories-header {
+        text-align: center;
+        font-family: 'Nixie One', cursive;
+        font-size: 30px;
+        color: white;
+        
+    }
+    
+    .button-controls {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .category-btn {
+        background-color: #FF33FF;
+        color: white;
+        font-family: 'Nixie One', cursive;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+    
+    .category-btn:hover {
+        background-color:#ffe6e6;
+        color: black;
+        font-family: 'Nixie One', cursive;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 10px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+
+}
+
+.calendar-search {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+
+.calendar-search {
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.search-controls {
+    background-color:#F8ABBA;
+    color: white;
+    font-family: 'Nixie One', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    width: auto;
+    text-align: center;
+    padding: 13px;
+    
+}
+
+label {
+    margin-left: 30px;
+
+}
+
+.search-icon {
+    height: 15px;
+    width: 30px;
+    align-items: baseline;
+}
+
+}
+
+.footer-container {
+    overflow:hidden;
+    background-color: white;
+    font-family: 'Nixie One', cursive;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.base-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.base-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.mfwf-logo {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.follow-us {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+
+.instagram-icon {
+    height: 25px;
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.facebook-icon {
+    height: 25px;
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.twitter-icon {
+    height: 25px;
+    width: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+.copyright-p {
+    margin-left: 32px;
+}
+
+@media (min-width: 1024px) {
+    .base-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+.follow-us {
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+.modal-mask {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: none;
+  }
+  
+  .modal {
+    background-color:black;
+    position: fixed;
+    top: 200px;
+    height: 300px;
+    max-width: 600px;
+    color: white;
+    border: none;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 300;
+    display: none;
+  }
+  
+  .modal-text {
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-family: 'Nixie One', cursive;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 10px;
+  
+  }
+
+  
+  .modal-button {
+    background-color: #FF33FF;
+    color: white;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    font-family: 'Nixie One', cursive;
+    border: none;
+  }
+
+  .modal-form {
+      display: flex;
+      flex-direction: column;
+  }
+
+  input[type=text], [type=email] {
+    padding: 5px; 
+    margin-bottom: 15px;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .show-modal {
+    display:block;
+}
+
+
+  @media (min-width: 1024px) {
+
+    input[type=text], [type=email] {
+        padding: 5px; 
+        margin-bottom: 15px;
+        width: 540px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+  }
+
