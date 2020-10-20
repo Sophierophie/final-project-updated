@@ -44,7 +44,6 @@ body {
     right: 0;
     top: 0;
     opacity: 0;
-    overflow-y: scroll;
     padding: 15px 30px;
     position: fixed;
     transition: all 0.35s ease-in-out;
@@ -63,7 +62,7 @@ body {
     display: block;
     font-size: 30px;
     margin: 25px auto;
-    text-align: center;
+    text-align: left;
     text-decoration: underline;
   }
 
@@ -83,7 +82,7 @@ body {
 
 
 .header-container {
-    height: 600px;
+    height: 450px;
 }
 
 .header-image {
@@ -101,7 +100,7 @@ body {
     font-size: 21px;
     animation: glow 1s ease-in-out infinite alternate;
     position: relative;
-    top: 230px;
+    top: 200px;
     bottom: 50px;
     z-index: 1;
 
@@ -120,9 +119,9 @@ body {
 .header-button {
     padding: 10px;
     position: absolute;
-    top: 420px;
+    top: 380px;
     z-index: 2;
-    left: 180px;
+    left: 110px;
     text-decoration: none;
     color: black;
     background: white;
@@ -385,7 +384,7 @@ body {
 .selling-fast-events h3 {
     position: relative;
     top: -200px;
-    left: 200px;
+    left: 130px;
     font-size: 21px;
     
 
@@ -403,12 +402,11 @@ body {
 
 .selling-fast-image {
     display: block;
-    width: 90%;
+    width: 100%;
     height: 350px;
     background-color: black;
     opacity: 0.7; 
     border-top: 10px #70676d solid;
-    margin-left: 25px;
 
 }
 
@@ -558,6 +556,7 @@ body {
     padding: 15px;
     border-radius: 10px;
     align-items: center;
+    margin-right: 10px;
 }
 
 .category-btn:hover {
@@ -798,8 +797,8 @@ label {
     max-width: 350px;
     color: white;
     border: none;
-    left: 50%;
-    top: 60%;
+    left: 37%;
+    top: 30%;
     transform: translate(-50%, -50%);
     z-index: 300;
     display: none;
