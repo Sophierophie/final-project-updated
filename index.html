@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./Img/MFWF Logo resized.jpg" type= "image/png">
+
+    <title>#MFWF</title>
+</head>
+<body>
+    <nav class="controls">
+    <a id="menu-1-button" href="#">About us</a>
+    <a id="menu-2-button" href="#">Events</a>
+    <a id="menu-3-button" href="#">Latest News</a>
+    <a id="menu-3-button" href="#">Subscribe</a>
+    <p id="mobile-subscribe">SUBSCRIBE</p>
+    <img id="menu-hamburger" class="menu-control" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/hamburger.svg"> 
+    </nav>
+    <aside class="menu">
+        <a href="#">ABOUT US</a>
+        <a href="#">EVENTS</a>
+        <a href="#">LATEST NEWS</a>
+        <a href="#">INDUSTRY NEWS</a>
+        <a href="#" id="menu-close">CLOSE x</a>
+    </aside>
+    <header class="header-container">
+    <h1 class="glow"> #MFWF</h1> 
+    <h2 class="glow">We're back and better than ever<br> and coming to a laneway near you</h2>
+    <div class="overlay">
+    <img class= "header-image" src="Img/Hosier Lane.jpg" alt="Hosier Lane alleyway"  />
+    </div>
+    <button class="header-button" id="subscribe-button">FIND OUT MORE</button>
+    </header>
+    <aside class="menu-desktop" id="dropdown-menu-1">
+    <ul class="menu-item-list">
+            <li>Welcome</li>
+            <li>Team</li>
+            <li>Partners</li>
+            <li>Media</li>
+        </ul>
+    </aside>
+    <aside class="menu-desktop" id="dropdown-menu-2">
+        <ul class="menu-item-list">
+            <li>All Events</li>
+            <li>Events By Date</li>
+            <li>Events By Category</li>
+            <li>Events by Dietaries</li>
+        </ul>
+    </aside>
+    <main class="main-events-container">
+        <div class="selling-fast-events">
+            <img class="selling-fast-image" src="./Img/Movida Crawl and Bite.jpg">
+            <h3>Selling Fast</h3>
+            <h4>HOSIER LANE CRAWL</h4>
+            <p>Featuring Spanish tapas from Movida Next Door followed by some bar snacks and well deserved drinks at Misty bar, take some time to check out the world-famous graffiti too!</p>
+        </div>
+        <div class="selling-fast-events">
+            <img class="selling-fast-image" src="./Img/Crawl and Bite Bartender.jpg">
+            <h3>Selling Fast</h3>
+            <h4>AC/DC LANE CRAWL</h4>
+            <p>There's a Peruvian feast at Pastuso, and Tonka serving contemporary Indian cuisine, ending up at Melbourne 's fave live music venue Cherry bar for a bevvie.</p>
+        </div>
+        <div class="selling-fast-events">
+            <img class="selling-fast-image" src ="./Img/The Duck Crawl.png">
+            <h3>Selling Fast</h3>
+            <h4>TATTERSALLS LANE CRAWL</h4>
+            <p>Take a tour of Chinatown starting at Shanghai Dumpling House, followed by Rice Workshop, where you will be served up tasty Japanese street food & finishing up at outdoor bar Section 8.</p>
+        </div>
+    </main>
+    <section class="button-container">
+        <h5 class="categories-header">POPULAR CATEGORIES</h5>
+        <div class="button-controls">
+            <button class="category-btn">Vegetarian crawls</button>
+            <button class="category-btn">Cheese crawls</button>
+            <button class="category-btn">Wine crawls</button>
+            <button class="category-btn">Highlight crawls</button>
+            <button class="category-btn">After dark crawls</button>
+            <button class="category-btn">Brunch crawls</button>
+        </div>
+    </section>
+    <section class="calendar-search">
+    <form class="search-controls" data-netlify="true">
+        <input type="date" id="start" name="EventDate"
+        value="2020-07-22"
+        min="2018-01-01" max="2020-12-31">
+        <label for="search-events">SEARCH EVENTS BY DATE</label>
+        <img class="search-icon" src="./Img/search-solid.svg">
+    </form>
+    </section>
+    <footer class="footer-container">
+    <ul class="base-nav">
+        <img class="mfwf-logo" src="Img/MFWF Logo resized.jpg">
+        <li class="base-nav-item">
+          <a class="base-nav-link" href="#">Events</a>
+          <p>View all events</p>
+          <p>Events by date</p>
+          <p>Events by category</p>
+        </li>
+        <div class="mobile-base-nav">
+        <li class="base-nav-item">
+          <a class="base-nav-link" href="#">My account</a>
+          <p>Tickets</p>
+          <p>Wishlist</p>
+        </div>
+        </li>
+        <div class="follow-us">
+        <li class="base-nav-item">
+          <a class="base-nav-link" href="#">Follow us on</a>
+        </li>
+        <img class="instagram-icon" src="Img/instagram-new.png">
+        <img class="facebook-icon" src="./Img/facebook-download.png">
+        <img class="twitter-icon" src="./Img/Twitter icon.png">
+        </div>
+        <li class="base-nav-item">
+        </li>
+      </ul>
+      <p class="copyright-p">@Copyright by Media Web Designs 2020</p>
+      </footer>
+      <div class="modal-mask"></div> 
+      <div class="modal" id="modal-hide"> 
+          <p class="modal-text">SUBSCRIBE</p> 
+          <p class="modal-text">Discover the best Melbourne has to offer- go on you know you want to!</p>
+          <form class="modal-form" data-netlify="true">
+            <input type="text" placeholder="Full name" name ="FullName">
+            <input type="email" placeholder="Email address" name ="Email">
+            <input type="text" placeholder="Postcode" name ="Postcode">
+          </form>
+          <button class="modal-button" id="modal-button-close">Submit</button>
+      </div>
+    <script src = "js/main.js"> </script>
+</body>
+</html>
