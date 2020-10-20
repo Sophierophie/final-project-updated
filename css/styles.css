@@ -264,14 +264,14 @@ body {
 
 
 .header-container {
-   height: 650px;
+   height: 500px;
 }
 
 
 
 
 .glow {
-   font-size: 30px;
+   font-size: 23px;
    color: white;
    text-align: left;
    font-family: 'Nixie One', cursive;
@@ -279,7 +279,6 @@ body {
    position: relative;
    bottom: -200px;
    top: 200px;
-   margin-left: 30px;
 }
 
 @keyframes glow {
@@ -293,11 +292,11 @@ body {
     }
 
 .header-image {
-    height: 550px;
-    width: 480px;
+    height: 400px;
+    width: 450px;
     border-radius: 400px;
     position: absolute;
-    right: 120px;
+    right: 100px;
     top: 70px;
     margin-top: 35px;
 }
@@ -313,6 +312,7 @@ body {
     padding: 15px 40px;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
+    text-align: center;
       }
       
     .header-button:hover {
@@ -320,6 +320,53 @@ body {
     box-shadow: 0 5px 15px  #fa4349;
       }
     }
+
+@media (min-width: 1300px) {
+
+    .header-container {
+        height: 600px;
+    }
+    
+    .glow {
+        font-size: 28px;
+        color: white;
+        text-align: left;
+        font-family: 'Nixie One', cursive;
+        animation: glow 1s ease-in-out infinite alternate;
+        position: relative;
+        bottom: -200px;
+        top: 200px;
+        margin-left: 70px;
+
+    }
+
+    .header-image {
+        height: 500px;
+        width: 550px;
+        border-radius: 400px;
+        position: absolute;
+        right: 170px;
+        top: 70px;
+        margin-top: 35px;
+    }
+
+    .header-button {
+        padding: 15px;
+        position: relative;
+        top: 220px;
+        left: 60px;
+        text-decoration: none;
+        color: black;
+        background: white;
+        padding: 15px 40px;
+        border-radius: 10px;
+        transition: all 0.2s ease-in-out;
+        text-align: center;
+          }
+
+
+
+}
 
 
 .main-events-container {
@@ -409,28 +456,32 @@ body {
 @media (min-width: 1024px) {
 
     .main-events-container {
+        display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
+        width: 100%;
         
         
     }
 
     .selling-fast-image {
         display: block;
-        width: 310px;
-        height: 290px;
+        width: 300px;;
+        height: 300px;
         background-color: black;
         opacity: 0.7; 
         border-top: 10px #FF66CC solid;
+        text-align: center;
     }
 
     .selling-fast-events h3 {
+    
         position: relative;
         top: -200px;
-        left: 180px;
-        font-size: 24px;
-
+        left: 120px;
+        font-size: 22px;
     }
+
 
     .selling-fast-events p {
         width: 300px;
@@ -438,14 +489,45 @@ body {
 
     }
 
-
-
-div:first-child {
-    margin-left:none;
-
-
 }
+
+@media (min-width: 1300px) {
+    .main-events-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        
+        
+    }
+
+    .selling-fast-image {
+        display: block;
+        width: 400px;
+        height: 350px;
+        background-color: black;
+        opacity: 0.7; 
+        border-top: 10px #FF66CC solid;
+        text-align: center;
+    }
+
+    .selling-fast-events h3 {
+    
+        position: relative;
+        top: -200px;
+        left: 150px;
+        font-size: 22px;
+    }
+
+
+    .selling-fast-events p {
+        width: 350px;
+        font-size: 17px;
+
+    }
 }
+
+
 
 
 .button-container {
@@ -475,7 +557,7 @@ div:first-child {
     font-weight: bold;
     padding: 15px;
     border-radius: 10px;
-    margin-right: 20px;
+    align-items: center;
 }
 
 .category-btn:hover {
@@ -486,7 +568,8 @@ div:first-child {
     font-weight: bold;
     padding: 15px;
     border-radius: 10px;
-    margin-right: 20px;
+    align-items: center;
+    
 }
 
 @media (min-width: 768px) {
@@ -550,7 +633,7 @@ div:first-child {
         font-weight: bold;
         padding: 15px;
         border-radius: 10px;
-        margin-right: 20px;
+        margin-right: 10px;
     }
     
     .category-btn:hover {
@@ -568,9 +651,34 @@ div:first-child {
 
 }
 
+@media (min-width: 1300px) {
+    .button-controls {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .category-btn {
+        background-color: #FF33FF;
+        color: white;
+        font-family: 'Nixie One', cursive;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+
+
+
+
+}
+
 .calendar-search {
     display: none;
 }
+
 
 @media (min-width: 1024px) {
 
