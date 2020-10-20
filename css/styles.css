@@ -97,10 +97,10 @@ body {
     color: white;
     text-align: center;
     font-family: 'Nixie One', cursive;
-    font-size: 22px;
+    font-size: 21px;
     animation: glow 1s ease-in-out infinite alternate;
     position: relative;
-    top: 250px;
+    top: 230px;
     bottom: 50px;
     z-index: 1;
 
@@ -119,9 +119,9 @@ body {
 .header-button {
     padding: 10px;
     position: absolute;
-    top: 450px;
+    top: 420px;
     z-index: 2;
-    left: 170px;
+    left: 180px;
     text-decoration: none;
     color: black;
     background: white;
@@ -335,21 +335,21 @@ body {
 
 .selling-fast-events h3 {
     position: relative;
-    top: -180px;
+    top: -200px;
     left: 200px;
-    font-size: 22px;
+    font-size: 21px;
     
 
 }
 
 .selling-fast-events p {
-    margin-left: 15px;
+    margin-left: 20px;
     width: 90%;
   
 }
 
 .selling-fast-events h4 {
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .selling-fast-image {
@@ -359,6 +359,7 @@ body {
     background-color: black;
     opacity: 0.7; 
     border-top: 10px #FF66CC solid;
+    margin-left: 25px;
 
 }
 
@@ -386,7 +387,7 @@ body {
 
     .selling-fast-events h3 {
         position: relative;
-        top: -200px;
+        top: -170px;
         left: 340px;
         font-size: 22px;
 
@@ -687,7 +688,7 @@ label {
     max-width: 350px;
     color: white;
     border: none;
-    left: 20%;
+    left: 50%;
     top: 60%;
     transform: translate(-50%, -50%);
     z-index: 300;
