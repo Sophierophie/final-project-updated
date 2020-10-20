@@ -407,12 +407,13 @@ body {
 
     .main-events-container {
         flex-direction: row;
+        justify-content: space-evenly;
         
     }
 
     .selling-fast-image {
         display: block;
-        width: 420px;
+        width: 350px;
         height: 350px;
         margin-right: 40px;
         background-color: black;
@@ -429,7 +430,7 @@ body {
     }
 
     .selling-fast-events p {
-        width: 400px;
+        width: 350px;
 
     }
 
