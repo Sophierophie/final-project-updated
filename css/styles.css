@@ -22,6 +22,7 @@ body {
       background-color: white;
       height: 20px;
       padding: 20px;
+      width: 100%;
   }
 
   .controls a {
@@ -148,7 +149,7 @@ body {
 @media (min-width: 768px) {
     .header-image {
         height: 550px;
-        width: 550px;
+        width: 400px;
         border-radius: 400px;
         position: absolute;
         right: 120px;
@@ -197,6 +198,7 @@ body {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 
@@ -269,7 +271,7 @@ body {
 
 
 .glow {
-   font-size: 40px;
+   font-size: 30px;
    color: white;
    text-align: left;
    font-family: 'Nixie One', cursive;
@@ -292,10 +294,10 @@ body {
 
 .header-image {
     height: 550px;
-    width: 550px;
+    width: 480px;
     border-radius: 400px;
     position: absolute;
-    right: 70px;
+    right: 120px;
     top: 70px;
     margin-top: 35px;
 }
@@ -358,7 +360,7 @@ body {
     height: 350px;
     background-color: black;
     opacity: 0.7; 
-    border-top: 10px #FF66CC solid;
+    border-top: 10px #70676d solid;
     margin-left: 25px;
 
 }
@@ -408,15 +410,15 @@ body {
 
     .main-events-container {
         flex-direction: row;
-        justify-items: space-evenly;
+        justify-content: center;
+        
         
     }
 
     .selling-fast-image {
         display: block;
-        width: 350px;
-        height: 350px;
-        margin-right: 40px;
+        width: 310px;
+        height: 290px;
         background-color: black;
         opacity: 0.7; 
         border-top: 10px #FF66CC solid;
@@ -431,7 +433,7 @@ body {
     }
 
     .selling-fast-events p {
-        width: 350px;
+        width: 300px;
         font-size: 17px;
 
     }
@@ -439,7 +441,7 @@ body {
 
 
 div:first-child {
-    margin-left:20px;
+    margin-left:none;
 
 
 }
