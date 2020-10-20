@@ -97,7 +97,7 @@ body {
     color: white;
     text-align: center;
     font-family: 'Nixie One', cursive;
-    font-size: 25px;
+    font-size: 22px;
     animation: glow 1s ease-in-out infinite alternate;
     position: relative;
     top: 250px;
@@ -121,7 +121,7 @@ body {
     position: absolute;
     top: 450px;
     z-index: 2;
-    left: 190px;
+    left: 170px;
     text-decoration: none;
     color: black;
     background: white;
@@ -354,7 +354,7 @@ body {
 
 .selling-fast-image {
     display: block;
-    width: 100%;
+    width: 90%;
     height: 350px;
     background-color: black;
     opacity: 0.7; 
@@ -678,26 +678,16 @@ label {
     }
 }
 
-.modal-mask {
-    background-color: rgba(0, 0, 0, 0.7);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 50;
-    display: none;
-  }
   
   .modal {
     background-color:black;
     position: fixed;
     top: 200px;
     height: 300px;
-    max-width: 600px;
+    max-width: 350px;
     color: white;
     border: none;
-    left: 50%;
+    left: 20%;
     top: 60%;
     transform: translate(-50%, -50%);
     z-index: 300;
@@ -746,12 +736,58 @@ label {
 
   @media (min-width: 1024px) {
 
-    input[type=text], [type=email] {
+    .modal {
+        background-color:black;
+        position: fixed;
+        top: 200px;
+        height: 300px;
+        max-width: 600px;
+        color: white;
+        border: none;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        z-index: 300;
+        display: none;
+      }
+      
+      .modal-text {
+        padding: 10px;
+        margin-top: 50px;
+        margin-left: 10px;
+        font-family: 'Nixie One', cursive;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 10px;
+      
+      }
+    
+      
+      .modal-button {
+        background-color: #FF33FF;
+        color: white;
+        display: block;
+        margin: auto;
+        padding: 10px;
+        font-family: 'Nixie One', cursive;
+        border: none;
+      }
+    
+      .modal-form {
+          display: flex;
+          flex-direction: column;
+      }
+    
+      input[type=text], [type=email] {
         padding: 5px; 
         margin-bottom: 15px;
-        width: 540px;
+        width: 550px;
         margin-left: 20px;
         margin-right: 20px;
+      }
+    
+      .show-modal {
+        display:block;
       }
 
   }
